@@ -4,14 +4,24 @@ namespace CinemaMultisala.Controllers
 {
     public class CinemaController : Controller
     {
-     
-        // GET: /HelloWorld/
-        public string Index()
+
+        // GET: /CinemaController/Index
+        
+        public IActionResult Sala()
         {
-            return "This is my default action...";
+             return View();
+          
         }
         // 
-        // GET: /HelloWorld/Welcome/ 
+        public IActionResult SalaNord()
+        {
+            return View();
+        }
+        
+        public IActionResult SalaSud()
+        {
+            return View();
+        }
         public string Welcome()
         {
             return "This is the Welcome action method...";
